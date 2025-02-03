@@ -1,14 +1,14 @@
 {
-  "name": "zero-to-prod/:slug",
-  "description": ":description",
+  "name": "zero-to-prod/curl-helper",
+  "description": "A helper for curl.",
   "license": "MIT",
   "type": "library",
   "keywords": [
     "zero-to-prod",
-    ":slug"
+    "curl-helper"
   ],
   "readme": "./README.md",
-  "time": ":time",
+  "time": "2025-02-03",
   "authors": [
     {
       "name": "David Smith",
@@ -17,13 +17,13 @@
       "role": "maintainer"
     }
   ],
-  "homepage": "https://github.com/zero-to-prod/:slug",
+  "homepage": "https://github.com/zero-to-prod/curl-helper",
   "support": {
     "email": "dave0016@gmail.com",
-    "issues": "https://github.com/zero-to-prod/:slug/issues",
-    "source": "https://github.com/zero-to-prod/:slug",
-    "docs": "https://zero-to-prod.github.io/:slug/",
-    "security": "https://github.com/zero-to-prod/:slug/blob/main/SECURITY.md"
+    "issues": "https://github.com/zero-to-prod/curl-helper/issues",
+    "source": "https://github.com/zero-to-prod/curl-helper",
+    "docs": "https://zero-to-prod.github.io/curl-helper/",
+    "security": "https://github.com/zero-to-prod/curl-helper/blob/main/SECURITY.md"
   },
   "funding": [
     {
@@ -32,7 +32,8 @@
     }
   ],
   "require": {
-    "php": ">=7.1"
+    "php": ">=7.1",
+    "zero-to-prod/dock": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "*",
@@ -40,7 +41,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Zerotoprod\\:namespace\\": "src/"
+      "Zerotoprod\\CurlHelper\\": "src/"
     }
   },
   "autoload-dev": {
@@ -49,6 +50,6 @@
     }
   },
   "bin": [
-    "bin/:slug"
+    "bin/curl-helper"
   ]
 }
