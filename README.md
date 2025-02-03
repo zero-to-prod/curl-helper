@@ -17,6 +17,7 @@
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Usage](#usage)
+  - [parseHeaders](#parseheaders)
 - [Local Development](./LOCAL_DEVELOPMENT.md)
 - [Contributing](#contributing)
 
@@ -40,7 +41,25 @@ This will add the package to your project’s dependencies and create an autoloa
 
 ## Usage
 
+### parseHeaders()
 
+Return the headers of a request as an array.
+
+```php
+use Zerotoprod\CurlHelper\CurlHelper;
+
+$CurlHandle = curl_init('https://google.com');
+curl_setopt_array($CurlHandle, [
+    CURLOPT_RETURNTRANSFER => true,
+    CURLOPT_HEADER => true,
+]);
+$response = curl_exec($CurlHandle);
+$header_size = curl_getinfo($CurlHandle, CURLINFO_HEADER_SIZE);
+curl_close($CurlHandle);
+
+$headers = CurlHelper::parseHeaders($response, $header_size);
+
+```
 
 ## Contributing
 
