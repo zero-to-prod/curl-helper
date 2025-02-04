@@ -47,8 +47,5 @@
     "psr-4": {
       "Tests\\": "tests/"
     }
-  },
-  "bin": [
-    "bin/curl-helper"
-  ]
+  }
 }
