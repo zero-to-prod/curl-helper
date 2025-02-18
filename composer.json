@@ -1,6 +1,6 @@
 {
   "name": "zero-to-prod/curl-helper",
-  "description": "A helper for curl.",
+  "description": "A helper for curl responses.",
   "license": "MIT",
   "type": "library",
   "keywords": [
